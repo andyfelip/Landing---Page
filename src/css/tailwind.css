@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Card {
+  @apply w-52 h-64 shadow-md rounded-lg bg-white flex-none mr-6 transform transition-all hover:-translate-y-4 hover:shadow-xl;
+}
+
+.Card--cover {
+  @apply w-full h-3/5 rounded-t-lg bg-cover;
+}
+
+.Card--description {
+  @apply w-full h-2/5 rounded-b-lg;
+}
+
+.Card:nth-child(even)  {
+  @apply bg-white dark:bg-gray-900;
+}
+.Card:nth-child(odd) {
+    @apply bg-secundary dark:bg-gray-700; 
+}
+
+.Card--title {
+  @apply px-4 text-lg py-2 ;
+}
+
+.Card--subtitle {
+  @apply text-base px-4;
+}
+
+.Card:nth-child(even) .Card--title,
+.Card:nth-child(even) .Card--subtitle {
+  @apply text-terciary dark:text-white;
+}
+
+
+.Card:nth-child(odd) .Card--title, 
+.Card:nth-child(odd) .Card--subtitle{
+    @apply text-white; 
+}
+
+.Text--Principle {
+  @apply text-3xl text-primary font-bold pb-6 dark:text-white;
+}
+
+.Card--rentas {
+  @apply w-full h-96 bg-cover bg-fixed object-cover rounded-3xl shadow-lg  transition-all duration-700 hover:shadow-2xl hover:-translate-y-5 mb-14 lg:bg-scroll lg:bg-center lg:flex lg:justify-end;
+}
+
+.Card-rentas-container {
+  @apply px-8 pt-8 pb-1 lg:mt-10;
+}
+
+.Card-rentas-title {
+  @apply text-2xl font-semibold text-white lg:flex lg:justify-end lg:text-3xl;
+}
+
+.Card-rentas-subtitle {
+  @apply text-white pt-1 lg:flex lg:justify-end lg:text-2xl;
+}
+
+.Card--Politica {
+  @apply w-full h-32 mb-4 flex flex-col items-start justify-center;
+}
+
+.Politicas--title {
+  @apply text-primary text-2xl font-semibold mb-4 dark:text-white;
+}
+
+.Politicas--subtitle {
+  @apply font-bold text-black dark:text-white;
+}
+
+.Footer--options{
+
+    @apply text-gray-500 font-normal text-base hover:border-b-gray-900 hover:border-b-2; 
+
+}
+
+.nav--titles{
+
+    @apply lg:text-primary lg:text-lg lg:font-bold lg:font-Montserrat lg:dark:text-white; 
+}; 
+
+.Icon--color{
+
+    @apply hover:fill-primary fill-gray-900 lg:dark:fill-white; 
+
+}
+
+
