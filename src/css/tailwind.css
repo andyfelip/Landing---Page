@@ -45,7 +45,7 @@
 }
 
 .Card--rentas {
-  @apply w-full h-96 bg-cover bg-fixed object-cover rounded-3xl shadow-lg  transition-all duration-700 hover:shadow-2xl hover:-translate-y-5 mb-14 lg:bg-scroll lg:bg-center lg:flex lg:justify-end;
+  @apply w-full h-96 bg-cover  object-cover rounded-3xl shadow-lg  transition-all duration-700 hover:shadow-2xl hover:-translate-y-5 mb-14 lg:bg-scroll lg:bg-center lg:flex lg:justify-end;
 }
 
 .Card-rentas-container {
